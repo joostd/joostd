@@ -1,8 +1,8 @@
-// Pull in our modules
-import chalk from 'chalk';
-import boxen from 'boxen';
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import boxen from 'boxen';
+// Pull in our modules
+import chalk from 'chalk';
 
 // Define options for Boxen
 const options = {
@@ -13,17 +13,17 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-	name: chalk.white('           Tierney Cyren'),
-	handle: chalk.white('bitandbang'),
-	shorthandle: chalk.white('bnb'),
-	work: chalk.white('Principal Developer Advocate at Twilio (::)'),
-	twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-	mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@bnb'),
-	npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-	github: chalk.gray('https://github.com/') + chalk.green('bnb'),
-	linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-	web: chalk.cyan('https://bnb.im'),
-	npx: `${chalk.red('npx')} ${chalk.white('bitandbang')}`,
+	name: chalk.white('           Joost van Dijk'),
+	handle: chalk.white('joostd'),
+	shorthandle: chalk.white('joostd'),
+	work: chalk.white('Developer Advocate at Yubico'),
+	twitter: chalk.gray('https://twitter.com/') + chalk.cyan('joostd'),
+	mastodon: chalk.gray('https://mastodon.social/') + chalk.magenta('@joostd'),
+	npm: chalk.gray('https://npmjs.com/') + chalk.red('~joostd'),
+	github: chalk.gray('https://github.com/') + chalk.green('joostd'),
+	linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('joostd'),
+	web: chalk.cyan('https://joostd.nl'),
+	npx: `${chalk.red('npx')} ${chalk.white('joostd')}`,
 	labelWork: chalk.white.bold('    Work:'),
 	labelTwitter: chalk.white.bold(' Twitter:'),
 	labelMastodon: chalk.white.bold('Mastodon:'),
@@ -36,7 +36,7 @@ const data = {
 
 // Actual strings we're going to output
 const newline = '\n';
-const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`;
+const heading = `${data.name} / ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const mastodoning = `${data.labelMastodon}  ${data.mastodon}`;
